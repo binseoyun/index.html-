@@ -52,7 +52,7 @@
                     <a href="#" id="his">역사</a>
 				</li>
 				<li class="dropdown">	
-                <a href="javascript:void(0)" class="dropbtn">서울지도</a>
+                <a href="javascript:void(0)" id="dropbtn">서울지도</a>
               </li>
 				
 			  </div>
@@ -144,6 +144,12 @@
        var en=document.getElementById("en");
        en.addEventListener("click",function(){
         location.replace('entertainment.html');
+    })
+
+
+     var api=document.getElementById("dropbtn");
+       api.addEventListener("click",function(){
+        location.replace('api.html');
     })
     </script>
 
