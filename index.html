@@ -46,10 +46,10 @@
 				<li class="dropdown">
 				<a href="javascript:void(0)" class="dropbtn">여행지찾기</a>
 				<div class="dropdown-content">
-					<a href="#">쇼핑</a>
-					<a href="#">자연</a>
-                    <a href="#">엔터테인먼트</a>
-                    <a href="#">역사</a>
+					<a href="#" id="sh">쇼핑</a>
+					<a href="#" id="na">자연</a>
+                    <a href="#" id="en">엔터테인먼트</a>
+                    <a href="#" id="his">역사</a>
 				</li>
 				<li class="dropdown">	
                 <a href="javascript:void(0)" class="dropbtn">서울지도</a>
@@ -125,7 +125,23 @@
         })
         
 
-
+       var sh=document.getElementById("sh");
+       sh.addEventListener("click",function(){
+        location.replace('https://binseoyun.github.io/index.html-/#/shopping.html')
+    });
+       
+       var na=document.getElementById("na");
+       na.addEventListener("click",function(){
+        location.replace('https://binseoyun.github.io/index.html-/#/open.html');
+    })
+       var his=document.getElementById("his");
+       his.addEventListener("click",function(){
+        location.replace('history.html');
+    })
+       var en=document.getElementById("en");
+       en.addEventListener("click",function(){
+        location.replace('entertainment.html');
+    })
     
     </script>
 
