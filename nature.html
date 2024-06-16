@@ -5,7 +5,7 @@
         <h1 class="sh">Nature</h1>
         <div class="grid">
             <p1 id="box1">
-                <p style="font-size:50px"; >남산공원</p>
+                <p style="font-size:50px"; id="namsan" >남산공원</p>
             <p>
                 남산공원은 서울에 있는 공원 중에서 가장 넓은 시민공원이다. 크게 장충지구와 예장지구, 회현지구, 한남지구로 나눌 수 있다. 여러 가지 체육행사가 열리며 백일장과 음악회 등의 문화행사도 열린다. 약수터가 많으며 공원 내에 김유신, 김구, 유관순 등의 동상이 있다.
     
@@ -26,7 +26,7 @@
                 </p>
             </p3>
             <p4 id="box4">
-                <p style="font-size:50px";>서울숲</p>
+                <p style="font-size:50px"; id="sm">서울숲</p>
                 <p>2005년 문을 연 서울숲은 시민들을 위한 여유로운 휴식처가 되고 있다. 서울숲은 문화예술공원, 생태숲, 자연체험학습원, 습지생태원과 같은 4개의 테마 공원으로 나뉜다. 문화예술공원에는 군마상과 넓은 잔디밭의 가족마당, 숲속 놀이터 등이 마련돼 있다. 생태숲은 야생 동물과 야생 식물이 공생할 수 있도록 꾸민 것이 특징이다. 자연체험학습원에는 지킴이 숲과 나비정원, 곤충식물원 등이 있다. 습지생태원은 환경 놀이터와 야외 자연 교실 등 푸른 숲이 어우러진 웰빙 공간이다. 
                     <br>
                     
@@ -86,8 +86,30 @@
 
     <body>
      <script>
-       
-    
+       var namsan=document.getElementById("namsan");
+       namsan.addEventListener("click",function(){
+        location.replace("https://parks.seoul.go.kr/template/sub/namsan.do");
+       })
+       namsan.addEventListener("mouseover",function(){
+        namsan.style.color="blue";
+       })
+       namsan.addEventListener("mouseout",function(){
+        namsan.style.color="";
+       })
+
+       var sm=document.getElementById("sm");
+       sm.addEventListener("click",function(){
+        location.replace("https://parks.seoul.go.kr/");
+       })
+       sm.addEventListener("mouseover",function(){
+        sm.style.color="blue";
+       })
+       sm.addEventListener("mouseout",function(){
+        sm.style.color="";
+       })
      </script>
     </body>
 </html>
+       
+    
+     
