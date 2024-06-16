@@ -5,7 +5,7 @@
         <h1 class="sh">entertainment</h1>
         <div class="grid">
             <p1 id="box1">
-                <p style="font-size:50px"; >국립극장</p>
+                <p style="font-size:50px"; id="t" >국립극장</p>
             <p>
                1950년 아시아 최초의 국립극장으로 설립된 국립극장은 대극장인 해오름극장과 소극장인 달오름 극장,공연에 따라 무대가 변하는 별오름극장, 원형 야외무대인 하늘극장 등으로 이루어졌다.<br>
                발레,가부키,연극,뮤지컬,완창 판소리와 같이 다양한 장르의 공연을 선보이고 있다
@@ -17,7 +17,7 @@
             
         </p1>
             <p2 id="box2">
-                <p style="font-size:50px";>롯데월드 에드벤쳐</p>
+                <p style="font-size:50px"; id="l">롯데월드 에드벤쳐</p>
                 <p>
                     롯데월드 어드벤처는 실내 어드벤처와 호수공원인 실외 매직 아일랜드로 나뉘어있다. <br>
                      롯데월드에 들어서면 가장 먼저 만나는 곳이 어드벤쳐다. ‘작은 지구 마을’ 을 테마로 조성된 어드벤처는 거대한 돔 형태의 실내 테마 파크로 날씨나 계절의 제약을 받지 않아 좋다. 이곳에는 22종의 놀이 기구가 설치되어 있고 시즌별로 
@@ -32,7 +32,7 @@
                 </p>
             </p3>
             <p4 id="box4">
-                <p style="font-size:50px";>뚝섬 한강공원 수영장</p>
+                <p style="font-size:50px"; id="s">뚝섬 한강공원 수영장</p>
                 <p>뚝섬 한강공원은 한강을 찾는 시민들의 편의와 즐거움을 위해 여름에는 수영장을 겨울에는 눈썰매장을 운영하고 있다
                     <br>
                     
@@ -92,7 +92,49 @@
 
     <body>
      <script>
-       
+       var t=document.getElementById("t");
+       t.addEventListener("click",function(){
+        location.replace("https://www.ntok.go.kr/kr/Main/Index");
+       })
+       t.addEventListener("mouseover",function(){
+        t.style.color="blue";
+       })
+       t.addEventListener("mouseout",function(){
+        t.style.color="";
+       })
+
+       var l=document.getElementById("l");
+       l.addEventListener("click",function(){
+        location.replace("https://adventure.lotteworld.com/kor/main/index.do");
+       })
+       l.addEventListener("mouseover",function(){
+        l.style.color="blue";
+       })
+       l.addEventListener("mouseout",function(){
+        l.style.color="";
+       })
+       var l=document.getElementById("l");
+       l.addEventListener("click",function(){
+        location.replace("https://adventure.lotteworld.com/kor/main/index.do");
+       })
+       l.addEventListener("mouseover",function(){
+        l.style.color="blue";
+       })
+       l.addEventListener("mouseout",function(){
+        l.style.color="";
+       })
+       var s=document.getElementById("l");
+       s.addEventListener("click",function(){
+        location.replace("https://hangang.seoul.go.kr/www/contents/774.do?mid=505");
+       })
+       s.addEventListener("mouseover",function(){
+        l.style.color="blue";
+       })
+       s.addEventListener("mouseout",function(){
+        l.style.color="";
+       })
+      
+
     
      </script>
     </body>
