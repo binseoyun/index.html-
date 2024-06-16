@@ -5,7 +5,7 @@
         <h1 class="sh">History</h1>
         <div class="grid">
             <p1 id="box1">
-                <p style="font-size:50px"; >국립중앙박물관</p>
+                <p style="font-size:50px"; id="ms">국립중앙박물관</p>
             <p>
                 한국 역사와 문화의 정수가 살아 숨 쉬는 국립중앙박물관은 
                 민족의 역사와 뿌리를 간직한 이 시대 최고의 문화 보고이자 역사의 현장이다. <br>
@@ -19,19 +19,19 @@
             
         </p1>
             <p2 id="box2">
-                <p style="font-size:50px";>창덕궁</p>
+                <p style="font-size:50px"; id="cd">창덕궁</p>
                 <p>창덕궁은 서울에서 두 번째로 유네스코 선정 세계문화유산으로 등재되었다.<br>
                 '동아시아 궁전 건축사에 있어 비정형적 조형미를 간직한 대표적 궁으로 주변 자연환경과의 완벽한 조화와 배치가 탁월하다는 이유이다.<br>
             조선은 임진왜란을 겪으면서 창덕궁을 잃었고, 광해국 2년에 재건된 창덕궁을 약 270년간 조선의 법궁으로 쓰였다</p>
             </p2>
             <p3 id="box3">
-                <p style="font-size:50px";>봉은사</p>
+                <p style="font-size:50px" id="b">봉은사</p>
                 <p>봉은사는 서울의 대표적인 사찰로 그 역사만도 1000년이 넘는다. 봉은사는 794년 연회국사가 견성사라는 이름으로 창건했다.<br>
             봉은사의 야경 고픙 빌딩이 즐비한 삼성동에 자리 잡은 봉은사 밥은 과거와 현재가 공존한다.<br>
         그래서 봉은사는 서울에서 야경이 멋있기로 손꼽이는 장소 중 하나이다. </p>
             </p3>
             <p4 id="box4">
-                <p style="font-size:50px";>국립서울현충원</p>
+                <p style="font-size:50px"; id="na">국립서울현충원</p>
                 <p>국립서울현충원은 나라와 민족을 위해 순국한 영령들이 안장된 국립묘지이다. 국가유공자의 충과 의를 기리기 위해 설립되었다. <br>
                     현충원 내에는 무용용사탑, 전쟁박물관, 현충관, 충렬대 등이 있다. 
                 </p>
@@ -90,8 +90,51 @@
 
     <body>
      <script>
-       
+       var ms=document.getElementById("ms");
+       ms.addEventListener("click",function(){
+        location.replace("https://www.museum.go.kr/site/main/home");
+       })
+       ms.addEventListener("mouseover",function(){
+        ms.style.color="blue";
+       })
+       ms.addEventListener("mouseout",function(){
+        ms.style.color="";
+       })
+      var cd=document.getElementById("cd");
+      cd.addEventListener("click",function(){
+        location.replace("https://royal.khs.go.kr/ROYAL/contents/menuInfo-gbg.do?grpCode=cdg");
+
+      })
+      cd.addEventListener("mouseover",function(){
+        cd.style.color="blue"; 
+         })
+      cd.addEventListener("mouseout",function(){
+        cd.style.color=""; 
+         })
+
+    var b=document.getElementById("b");
+    b.addEventListener("click",function(){
+        location.replace("http://www.bongeunsa.org/")
+    })
+    b.addEventListener("mouseover",function(){
+        b.style.color="blue"; 
+         })
+      b.addEventListener("mouseout",function(){
+        b.style.color=""; 
+         })
+    var na=document.getElementById("na");
+    na.addEventListener("click",function(){
+        location.replace("https://www.snmb.mil.kr/");
+    })
+    na.addEventListener("mouseout",function(){
+        na.style.color="";
+    })
+    na.addEventListener("mouseover",function(){
+        na.style.color="blue";
+    })
     
+    
+
      </script>
     </body>
 </html>
